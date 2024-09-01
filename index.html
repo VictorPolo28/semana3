@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Productos</title>
+</head>
+<body>
+    <h1>Registro  de  Productos</h1>
+    <form id="registro-producto" action="/appi/productos/3001/" method="post">
+        <div>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" required>
+        </div>
+        <div>
+        <label for="descripcion">Descripcion</label>
+        <textarea name="descripcion" id="descripcion" rows="5" required></textarea>
+        </div>
+        <div>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" min="0" required>
+        </div>
+        <div>
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria" required>
+                <option value="Electronica">Electronica</option>
+                <option value="Ropa">Ropa</option>
+                <option value="Alimentos">Alimentos</option>
+            </select>
+        </div>
+        <div>
+            <label for="stock">Stock:</label>
+            <input type="number" name="stock"  id="stock" min="0" required>
+        </div>
+        <div>
+        <button type="submit" >Enviar</button>
+        </div>
+    </form>
+    
+</body>
+</html>
